@@ -1,0 +1,14 @@
+import random
+
+#gets input separated by comma
+names_string = input("Give me everybody's names, separated by a comma: ")
+#function split is used to separate the input values by comma and turn it into a list
+names = names_string.split(",")
+#gets length of list of names and store it to random item
+random_item = len(names)
+#used random.randit function to sort from 0 to end of list of random_item and store the value to the randomizer
+randomizer = random.randint(0, random_item -1)
+#randomize the values from the input and store it to the person_who_will_pay
+person_who_will_pay = names[randomizer]
+#print out the name of the person_who_will_pay
+print("The person who will pay for our meal today is "+ person_who_will_pay)
