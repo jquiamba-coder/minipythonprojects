@@ -1,0 +1,9 @@
+print("This is your life in weeks calculator\n")
+age = input("Type your age to compute for your remaining Years or Days or Weeks or Months: ")
+age_as_int = int(age)
+years_remaining = 90 - age_as_int
+days_remaining = years_remaining * 365
+weeks_remaining = years_remaining * 52
+months_remaining = years_remaining * 12
+
+print(f"You have {years_remaining} years remaining, {days_remaining} days remaining, {weeks_remaining} weeks remaining and {months_remaining} months remaining")
