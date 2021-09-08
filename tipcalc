@@ -3,6 +3,9 @@ bill = float(input("What was the total bill? "))
 tip = int(input("What percentage tip would you like to give 10, 12 or 15?: "))
 persons = int(input("How many person to split the bill?: "))
 total_bill = tip / 100 * bill + bill
+rounded_total_bill = round(total_bill, 2)
+rounded_total_bill = "{:.2f}".format(total_bill)
 splitted_bill = total_bill / persons
 rounded_bill = round(splitted_bill, 2)
+rounded_bill = "{:.2f}".format(splitted_bill)
 print(f"Your total bill plus tip is ${total_bill} you should each pay ${rounded_bill}")
