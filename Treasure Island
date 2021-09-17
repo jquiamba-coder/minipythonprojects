@@ -25,11 +25,11 @@ print("Your mission is to find the treasure.")
 
 #https://www.draw.io/?lightbox=1&highlight=0000ff&edit=_blank&layers=1&nav=1&title=Treasure%20Island%20Conditional.drawio#Uhttps%3A%2F%2Fdrive.google.com%2Fuc%3Fid%3D1oDe4ehjWZipYRsVfeAx2HyB7LCQ8_Fvi%26export%3Ddownload
 
-way1 = input("You came to a cross road. Type Left or Right: ").lower()
+way1 = input("You've come to a cross road. Type Left or Right: ").lower()
 if way1 == "left":
-  way2 = input("You have reached an Island. Type Swim or Wait: ").lower()
+  way2 = input("You've come to a lake. There is an island in the middle of the lake. Type Swim or Wait: ").lower()
   if way2 == "wait":
-    way3 = input("You came to a set of 3 doors. Type Red, Blue or Yellow: ").lower()
+    way3 = input("You've come to a set of 3 doors. Type Red, Blue or Yellow: ").lower()
     if way3 == "yellow":
       print('''
 *******************************************************************************
@@ -58,6 +58,8 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
       print("You entered a room full of snakes! Game Over!")
     elif way3 == "blue":
       print("Yikes you have entered a burning room! Game Over! ")
+    else:
+      print("You chose a room that doesn't exist. Game Over!")
   else:
     print("You got eaten by crocodiles, Game Over!")
 
